@@ -1,0 +1,126 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #121214;
+}
+.header {
+    width: 100vw;
+    height: 11vh;
+    background-color: #121214;
+    display: flex;
+}
+
+.logo {
+    margin-left: 5vw;
+}
+
+.HButtons {
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    margin-left: 12vw;
+    width: 70vw;
+}
+
+.headerButton {
+    cursor: pointer;
+    position: relative;
+    color: white;
+    height: 11vh;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    font-size: 33px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    white-space: nowrap;
+    transition: 0.3s;
+    user-select: none;
+}
+
+.headerButton:hover {
+    color: #4e90db;
+}
+
+.headerButton::after {
+    content: "";
+    position: absolute;
+    top: 7.9vh;
+    height: 4px;
+    width: 118%;
+    left: 0;
+    transform: translate(-20%, 0);
+    background-color: #A0C0E4;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    transition: 0.3s;
+    transform: scaleX(0);
+}
+
+.headerButton:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom;
+} 
+.Pbody{ 
+    width: 100vw; 
+    height: 84vh;
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+}  
+.Bimage{
+    width: 70vw; 
+    position: absolute; 
+    height: 75.4%;
+} 
+
+.text1{
+    height: 38vh; 
+    width: 41vw; 
+    position: absolute; 
+    background-color: #121214b0; 
+    right: 0; 
+    transform: translateX(-36.3%); 
+    border-top-left-radius: 30px; 
+    border-bottom-left-radius: 30px; 
+    color: white; 
+    font-family: Arial, Helvetica, sans-serif;  
+    font-weight: bold;
+} 
+h1{
+    font-size: 4.4vmin; 
+    width: 60%; 
+    margin: 6%; 
+    margin-top: 3%;
+} 
+p{
+    font-size: 2.7vmin; 
+    margin-left: 10%; 
+    transform: translateY(-10%); 
+} 
+.contact-button{ 
+    width: 14%; 
+    height: 7vh; 
+    background-color: #4e90db; 
+    position: absolute; 
+    bottom: 16%; 
+    right: 30%; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;   
+    font-family: Arial, Helvetica, sans-serif;  
+    font-weight: bold; 
+    color: white; 
+    font-size: 2.4vmin; 
+    border-radius: 12px; 
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.524); 
+    cursor: pointer; 
+    transition: 0.3s; 
+    user-select: none;
+} 
+.contact-button:hover{
+    background-color: white; 
+    color: #4e90db
+}
