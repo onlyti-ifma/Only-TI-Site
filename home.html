@@ -4,31 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/home.css">
 </head>
 <body>  
-    <div class="header">
-        <img src="assets/img/image-removebg-preview 2.png" class="logo"alt="logo only ti"> 
-        <div class="HButtons">
-        <div class="headerButton">
-            <p>  Home</p>
-        </div>
-        <div class="headerButton"> 
-           <p> Quem Somos</p>
-        </div>
-        <div class="headerButton">
-            <p>   Serviços</p>
-        </div>
-        <div class="headerButton">
-            <p> portifólio</p>
-        </div>
-</div> 
-    </div> 
-    <div class="Pbody"> 
-        <img src="assets/img/image_3-transformed.png" class="Bimage" alt="background image"> 
+    <div id="header"></div>
+    <div class="Pbody mt-lg-5"> 
+        <img src="assets/img/image_3-transformed.png" class="Bimage pt-5" alt="background image"> 
         <div class="text1">
             <h1>Consultoria e Serviços em TI</h1> 
-           <p> Nosso nicho de atuação é voltado para Pequenas e Médias empresas .
+            <p> Nosso nicho de atuação é voltado para Pequenas e Médias empresas .
              Trabalhamos com o que há de melhor no mercado
              para trazer comodidade e aumento exponencial de 
              produtividade empresarial!</p>
@@ -36,5 +21,10 @@
         <div class="contact-button">CONTATE-NOS</div>
     </div>
     <script src="assets/js/home.js"></script>
+    <script src="assets/js/componentes.js"></script>
+    <script>
+        window.onload = importar('header', 'componentes/header.html')
+    </script>
+    
 </body>
 </html>
