@@ -1,4 +1,5 @@
 let contact_button= document.querySelector(".contact-button"); 
+
 contact_button.addEventListener("click",()=>{ 
     contact_button.style.transition="0.08s" 
     contact_button.style.right="20.4%" 
@@ -10,4 +11,11 @@ contact_button.addEventListener("click",()=>{
     contact_button.style.transition="0.3s"  
     contact_button.style.boxShadow="-10px 10px 5px rgba(0, 0, 0, 0.524)"
 },100)
-})
+})  
+
+let subtitulo = document.querySelectorAll(".sub-tittle") 
+subtitulo.forEach((subtitulo)=>{
+    console.log(subtitulo.className.split(" ")[1])
+    subtitulo.style.transform=`translateY(${10*Number(subtitulo.className.split(" ")[1])}vh)`
+}) 
+

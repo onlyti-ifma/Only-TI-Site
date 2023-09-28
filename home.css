@@ -197,6 +197,27 @@ cursor: pointer;
 a{
     color: white; 
     text-decoration: none;
+}  
+.titulo-quemSomos{
+    font-size: 8vmin; 
+    color: #2B689C; 
+    font-weight: bold; 
+    font-family: 'Lilita One', cursive; 
+    position: absolute; 
+    top: 0; 
+    left: 0; 
+    margin: 18vmin; 
+    margin-top: 28vmin;
 } 
+.sub-tittle{
+    font-family: 'Lilita One', Arial;  
+    font-size: 5vmin;
+    color: #2B689C; 
+    position: absolute;  
+    top: 0; 
+    left: 0; 
+    margin: 18vmin; 
+    margin-top: 38vmin;
+}
 
 
