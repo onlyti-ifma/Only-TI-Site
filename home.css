@@ -9,7 +9,66 @@ body{
     align-items: center; 
     flex-direction: column; 
     overflow-x: hidden;
+}   
+.scroll{
+    display: flex; 
+}
+.quadradotest{
+    width: 13vmin; 
+    height: 13vmin; 
+    background-color: green; 
+    position: relative; 
+    left: 30.3vw; 
+    top: -11vh;  
+    margin-left: 2vw ;
+    margin-bottom: 9vh; 
+    border-radius: 50%; 
+    background-image: url(./assets/img/insta.jpg); 
+    background-size: cover; 
+    cursor: pointer; 
+    user-select: none; 
+    transition: 1s;  
+} 
+.quadradotest::after{ 
+    content: "";
+    position: absolute; 
+    left: 0; 
+    top: 0; 
+    height: 100%; 
+    width: 100%;  
+    border-radius: 50%; 
+    opacity: 0;
+    background-image: url(./assets/img/pngwing.com\ \(1\).png); 
+    background-size:cover;   
+    transition: 0.6s;
+} 
+.quadradotest::before{ 
+    content: "Pedro Julius";
+    position: absolute;  
+    display: flex; 
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+    font-size: 2vmin;
+    left: 0;  
+    bottom: -20%; 
+    color: white; 
+    height: 10%; 
+    width: 100%;  
+    border-radius: 50%; 
+    opacity: 1;
+    transition: 0.6s;
+} 
+
+
+.quadradotest:hover::after{
+    opacity: 0.8; 
+    backdrop-filter: blur(10px); 
+    box-shadow: 0px 0px 20px 1px rgb(185, 75, 202), inset 0px 0px 2px 3px rgb(185, 75, 202);
 }  
+
+
+
 
 ::-webkit-scrollbar {
     width: 0.5vw;
@@ -99,8 +158,11 @@ body{
     height: 84vh;
     display: flex; 
     align-items: center; 
-    justify-content: center; 
-}  
+    justify-content: center;   
+}   
+.column-direction{
+    flex-direction: column;
+}
 .Bimage{
     width: 100vw; 
     position: absolute; 
@@ -130,7 +192,7 @@ body{
     font-size: 2.7vmin; 
     margin-left: 10%; 
     transform: translateY(-10%);  
-    width: 77%;
+    width: 77%; 
 } 
 .contact-button{ 
     width: 14%; 
@@ -204,7 +266,7 @@ a{
     font-weight: bold; 
     font-family: 'Lilita One', cursive; 
     position: absolute; 
-    top: 0; 
+    top: -10vmin; 
     left: 0; 
     margin: 18vmin; 
     margin-top: 28vmin;
@@ -215,9 +277,14 @@ a{
     color: #2B689C; 
     position: absolute;  
     top: 0; 
-    left: 0; 
+    left: 4vmin; 
     margin: 18vmin; 
     margin-top: 38vmin;
+} 
+.paragraph{
+    color: white; 
+    font-size: 3vmin; 
+    width: 45vw;
 }
 
 
