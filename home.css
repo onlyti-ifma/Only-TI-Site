@@ -105,18 +105,13 @@ a{
 .header {
     width: 100vw;
     height: 11vh;
-    background-color: #12121435; 
-    backdrop-filter: blur(10px);
+    background-color: #121214; 
     display: flex; 
     position: fixed; 
     top: 0; 
     z-index: 1; 
     transition: 0.2s;
 } 
-.header:hover{
-    background-color: #121214; 
-    backdrop-filter: blur(0px);
-}
 
 .logo {
     margin-left: 5vw;
@@ -285,7 +280,7 @@ cursor: pointer;
     margin: 18vmin; 
     margin-top: 28vmin;
 } 
-.sub-tittle{
+.sub-title{
     font-family: 'Lilita One', Arial;  
     font-size: 5vmin;
     color: #2B689C; 
@@ -300,7 +295,7 @@ cursor: pointer;
     font-size: 3vmin; 
     width: 45vw;
 } 
-.contato-tittle{
+.contato-title{
     color: #78C1FF; 
     font-family: Arial, Helvetica, sans-serif; 
     font-weight: bolder; 
@@ -310,7 +305,7 @@ cursor: pointer;
     transition: 0.4s; 
     cursor: pointer;
 }  
-.contato-tittle:hover{
+.contato-title:hover{
     color: white; 
     text-shadow: rgb(0, 132, 255) 1px 0 10px;
 }
@@ -408,5 +403,38 @@ input:focus{
     background-color: #202024; 
     border: #78C1FF 2px solid; 
     color: #78C1FF;
+  } 
+  .contact-info{
+    color: #78C1FF; 
+    position: relative; 
+    left: -13vw; 
+    top: -5vh;  
+    font-size: 3vmin; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bolder; 
+  } 
+  hr{
+    background-color: #78C1FF; 
+    border: none; 
+    height: 3.3px; 
+    width: 24vw;
+    border-radius: 0.4px; 
+    margin-top: 1vmin; 
+    transform: translate(-14%,0); 
+  } 
+  .contact-subtitle{
+    color: #78C1FF; 
+    font-weight: 500; 
+    margin: 3vmin; 
+    margin-left: 0;
+  } 
+  .contact-paragraph{
+    color: white; 
+    font-size: 2.7vmin; 
+    width: 25vw; 
+    margin: 1vmin;
+  } 
+  form{
+    height: 100%;
   }
 
