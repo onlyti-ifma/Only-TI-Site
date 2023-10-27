@@ -322,8 +322,8 @@ cursor: pointer;
     top: 6vh;
 } 
 .contact-box{
-    height: 67vh; 
-    width: 27vw; 
+    height: 61vh; 
+    width: 24.7vw; 
     background-color: #202024; 
     position: absolute; 
     right: 8.9vw; 
@@ -335,39 +335,49 @@ input{
     background-color: #141417; 
     outline: none; 
     border: none; 
-    height: 10%; 
-    margin: 4%; 
-    width: 85%; 
+    height: 9%; 
+    margin-bottom: 5%;
+    width: 72%; 
     border-radius: 8px; 
-    padding-left: 10px; 
+    padding-left: 4%; 
+    box-sizing: border-box;
     color: white; 
     font-size: 2vmin;
-} 
+}  
+input:first-of-type{
+    margin-top: 10%;
+}
 input:focus{
     border: 2px #78C1FF solid; 
     box-sizing: border-box; 
+}   
+input:focus::placeholder{
+    color: #78C1FF;
 }   
 
 .mensagem{
     background-color: #141417; 
     outline: none; 
     border: none; 
-    height: 30%; 
-    margin: 4%; 
-    width: 85%; 
+    height: 27%; 
+    margin-bottom: 5%;
+    width: 73%; 
     border-radius: 8px; 
-    padding-left: 10px; 
+    padding-left: 4%;
     padding-top: 10px; 
     box-sizing: border-box;
     color: white; 
     font-size: 2vmin; 
     resize: none; 
     margin-bottom:0%;
-}
+} 
 .mensagem:focus{
     border: 2px #78C1FF solid; 
     box-sizing: border-box; 
-}  
+}   
+.mensagem:focus::placeholder{
+    color: #78C1FF;
+}   
 ::-webkit-scrollbar {
     width: 0.5vw;
     position: absolute; 
@@ -390,11 +400,20 @@ input:focus{
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: #1a56b8;
-  } 
+  }  
+  input::placeholder{
+    padding-left: 3%;
+  }
+  .mensagem::placeholder{
+      padding-left: 4%;
+  }
   .submit-button{ 
-    background-color: #4e90db; 
-    width: 86.7%; 
-    cursor: pointer; 
+    background-color: #4e90db;  
+    width: 30.4%; 
+    cursor: pointer;  
+    font-size: 170%; 
+    margin-top: 7%; 
+    padding-left: 0;
   }  
   .submit-button:focus{
     border: none;
@@ -408,7 +427,7 @@ input:focus{
     color: #78C1FF; 
     position: relative; 
     left: -13vw; 
-    top: -5vh;  
+    top: -1vh;  
     font-size: 3vmin; 
     font-family: Arial, Helvetica, sans-serif; 
     font-weight: bolder; 
@@ -435,6 +454,9 @@ input:focus{
     margin: 1vmin;
   } 
   form{
-    height: 100%;
+    height: 100%; 
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
   }
 
