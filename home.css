@@ -172,6 +172,10 @@ a{
     justify-content: center;   
     margin-top: 15.3vh;
 }   
+.service{
+    height: 240vh; 
+    display: block;
+}
 .column-direction{
     flex-direction: column;
 }
@@ -458,5 +462,92 @@ input:focus::placeholder{
     display: flex; 
     flex-direction: column; 
     align-items: center;
+  } 
+  .service-box{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    height: 40vh; 
+   margin-top: 20vh;
+    font-size: 3vmin; 
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  .service-box:first-child{
+    margin-top: 1vh;
   }
+  .service-title{
+    color: #78C1FF; 
+    font-weight: bolder;
+  } 
+  .service-desc{ 
+    margin-top: 1%;
+    color: white;
+  }  
+  .waves{
+    position: relative; 
+    left: -17%;
+  }
+  .wave{
+    background-image: url(./assets/img/wave.png); 
+    background-size: 1000px 100px; 
+    width: 100vw; 
+    height: 100px; 
+    position: absolute; 
+    top: 7vh; 
+ } 
+ .w1{
+    animation: waveAnimation 4s linear infinite; 
+    z-index: 5; 
+ } 
+ .w2{ 
+    transform: translate(0,-9%);
+    animation: waveAnimation 4s linear infinite; 
+    z-index: 4; 
+    opacity: 0.5;
+ } 
+ .w3{  
+    opacity: 0.2;
+    transform: translate(0,-5.5%);
+    animation: waveAnimation2 4s linear infinite; 
+    z-index: 3;
+ } 
+ .w4{  
+    opacity: 0.7;
+    transform: translate(0,-7%);
+    animation: waveAnimation2 4s linear infinite ; 
+    z-index: 4;
+ } 
+ @keyframes waveAnimation {
+    from{ 
+        background-position: 0px;
+    } 
+    to{
+        background-position: 1000px;
+    }
+ }  
+ @keyframes waveAnimation2 {
+    0%{ 
+        background-position: 0px; 
+        top: 7vh;
+    }  
+    50%{
+        top:5.5vh
+    }
+    80%{ 
+        background-position: 900px; 
+        top: 6.4vh;
+    } 
+    100%{background-position: 1000px;
+        top: 7vh;
+    }
+ }  
+ .background-blue{
+    background-color: #1e89e7; 
+    height: 100%; 
+    width: 100%;
+    position: absolute; 
+    top: 133.7vh; 
+    left: 0;
+ }
+ 
 
