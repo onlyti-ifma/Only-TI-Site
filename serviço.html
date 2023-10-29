@@ -5,8 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
-    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
-    type="module"></script>
+    <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
     <link rel="stylesheet" href="home.css">
 </head>
 
@@ -35,32 +34,71 @@
             <div class="service-title">
                 SOLUÇÕES WEB </div>
             <div class="service-desc">
-                Criamos websites e servidores para que seu negócio tenha presença na internet.
+                Desenvolvimento utilizando tecnologias estáveis como NodeJS, Angular, HTML5, CSS, JS, automatizadores
+                front-end, entre outras...
             </div>
-            <br><br>
+
             <dotlottie-player src="https://lottie.host/06536b42-e33e-475e-a955-39db5edd631b/HF1Lnft6vx.json"
                 background="transparent" speed="1" style="width: 30vw; height: 50vh;" loop autoplay></dotlottie-player>
-        </div> 
+        </div>
         <div class="service-box">
             <div class="service-title">
                 SOLUÇÕES DESKTOP </div>
             <div class="service-desc">
-                Faça um aplicativo que rode nativamente no windows
+                Realizamos manutenção de sistemas legados, upgrade e desenvolvemos sistemas para plataformas locais.
             </div>
-            <br><br> 
-            <dotlottie-player src="https://lottie.host/fbc4e808-c258-460a-91be-6a5009bb423e/QyoUG0mvMN.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player>
-        </div> ]
+            <br><br>
+            <dotlottie-player src="https://lottie.host/fbc4e808-c258-460a-91be-6a5009bb423e/QyoUG0mvMN.json"
+                background="transparent" speed="1" style="width: 300px; height: 300px;" loop
+                autoplay></dotlottie-player>
+        </div>
         <div class="waves">
-            <div class="wave w1"></div> 
-            <div class="wave w2"></div> 
-            <div class="wave w3"></div> 
-            <div class="wave w4"></div>
-        </div> 
+            <svg class="wave" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <path id="wave1" d="" />
+            </svg>
+            <svg class="wave w3" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <path id="wave3" d="" />
+            </svg>
+            <svg class="wave" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+                <defs></defs>
+                <path id="wave2" d="" />
+            </svg>
+        </div>
         <div class="background-blue">
 
         </div>
+        <br><br> <br><br>
+        <div class="service-box sub">
+            <div class="service-title">
+                SOLUÇÕES MOBILE </div>
+            <div class="service-desc">
+                Atuamos com o desenvolvimento de aplicações para dispositivos móveis utilizando Flutter com Dart, React
+                Native, etc....
+            </div>
+            <dotlottie-player src="https://lottie.host/28e50ade-6d03-405d-8843-ff3a29a791db/aszUjVEP16.json"
+                background="transparent" speed="1" style="width: 500px; height: 500px;" loop
+                autoplay></dotlottie-player>
+        </div>
+        <div class="service-box sub">
+            <div class="service-title">
+                SUPORTE E CONSULTORIA
+            </div>
+            <div class="service-desc">
+                Oferecemos suporte ao usuário através do nosso serviço de consultoria em tópicos da Tecnologia da
+                Informação.
+            </div>
+            <dotlottie-player src="https://lottie.host/7797769f-ebd6-4137-9f72-d73496c52cd1/s5NBH2dB1v.json"
+                background="transparent" speed="1" style="width: 400px; height: 400px;" loop
+                autoplay></dotlottie-player>
+        </div>
     </div>
     <div class="rodape">
+        <svg class="wave" width="100%" height="100%" version="1.1" xmlns="http://www.w3.org/2000/svg">
+            <defs></defs>
+            <path id="waveRodape" d="" />
+        </svg>
         <div class="rodape-column-1">
             <img src="./assets/img/logo_only_-_footer_u8.png" class="bottomlogo" alt="">
             <p class="copyright">COPYRIGHT (c) 2018 BY ONLY TI JR. ALL RIGHT RESERVED</p>
@@ -77,6 +115,46 @@
         </div>
     </div>
     <script src="home.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+        integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <script src="wavify.js"></script>
+    <script src="jquery.wavify.js"></script>
+
+    <script> setTimeout(() => {
+            var myWave3 = wavify(document.querySelector('#wave3'), {
+                height: 80,
+                bones: 6,
+                amplitude: 90,
+                color: '#177ed811',
+                speed: .4
+            })
+            var myWave2 = wavify(document.querySelector('#wave2'), {
+                height: 80,
+                bones: 6,
+                amplitude: 90,
+                color: '#177ed8da',
+                speed: .4
+            })
+
+        }, 400)
+        myWave = wavify(document.querySelector('#wave1'), {
+            height: 80,
+            bones: 6,
+            amplitude: 90,
+            color: '#177ed8',
+            speed: .4
+        })
+        myWave = wavify(document.querySelector('#waveRodape'), {
+            height: 80,
+            bones: 6,
+            amplitude: 60,
+            color: '#121214',
+            speed: .4
+        })  
+    </script>
 </body>
 
 </html>
